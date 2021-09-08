@@ -1,6 +1,6 @@
 // Scrivi una funzione che accetti una stringa come argomento e la ritorni
 function girami(parola){
-    var inverso = "";
+    let inverso = "";
 
     for (i = parola.length - 1; i >= 0; i--){
         inverso += parola[i];
