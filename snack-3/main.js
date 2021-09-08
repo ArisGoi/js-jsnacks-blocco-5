@@ -8,7 +8,7 @@ function girami(parola){
 
     return inverso
 }
-var risultato = girami("ciao");
+var risultato = girami(prompt('scrivi una parola'));
 
 // girata (es. Ciao -> oaiC)
 console.log(risultato);
