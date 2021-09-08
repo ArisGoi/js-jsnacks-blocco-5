@@ -70,4 +70,4 @@ for (i=0; i<raccolto.length; i++){
 };
 
 
-console.log(`le zucchine in totale pesano ${totPeso}g`);
+console.log(`le zucchine in totale pesano: ${totPeso} g`);
