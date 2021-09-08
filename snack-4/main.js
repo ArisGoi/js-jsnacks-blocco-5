@@ -4,11 +4,15 @@
 const array1 = ["a","b","c"];
 const array2 = [1,2,3];
 
-const arraySomma = [];
+function arraySomma(array1, array2){
+    let arraySomma = [];
 
-for(i=0; i<array1.length; i++){
-    arraySomma.push(array1[i]);
-    arraySomma.push(array2[i]);
-};
+    for(i=0; i<array1.length; i++){
+        arraySomma.push(array1[i]);
+        arraySomma.push(array2[i]);
+    };
 
-console.log(arraySomma);
+    return arraySomma
+}
+
+console.log(arraySomma(array1, array2));
