@@ -13,8 +13,16 @@ function extrator(arr, a, b){
     return arrEstratto
 };
 
-var inputStart = parseInt(prompt('Estrai da un\'array: inserisci un numero di inizio (max_25)'));
-var inputEnd = parseInt(prompt('Estrai da un\'array: inserisci un numero di fine (max_25)'));
+var inputStart;
+do{
+    inputStart = parseInt(prompt('Estrai da un\'array: inserisci un numero di inizio (tra 1 e 25)'));
+} while(inputStart <= 0 || inputStart>25);
+
+var inputEnd;
+do{
+    inputEnd = parseInt(prompt('Estrai da un\'array: inserisci un numero di fine (tra 1 e 25)'));
+} while(inputEnd<inputStart || inputEnd>25);
+
 
 const arrInizio = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"];
 var arrFine = extrator(arrInizio, inputStart, inputEnd);
