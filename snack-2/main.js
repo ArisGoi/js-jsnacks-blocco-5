@@ -66,15 +66,23 @@ var raccolto = [
 var zucchinePiccole = [];
 var zucchineGrandi = [];
 
+var pesoGrandi = 0;
+var pesoPiccole = 0;
+
 for (i=0; i<raccolto.length; i++){
     // totPeso += raccolto[i].peso;
     if(raccolto[i].lunghezza < 15){
         zucchinePiccole.push(raccolto[i]);
+        pesoPiccole += raccolto[i].peso;
     } else {
         zucchineGrandi.push(raccolto[i]);
+        pesoGrandi += raccolto[i].peso;
     }
 };
 
 // Infine stampa separatamente quanto pesano i due gruppi di zucchine.
 console.log(zucchinePiccole);
+console.log(pesoPiccole);
+
 console.log(zucchineGrandi);
+console.log(pesoGrandi);
